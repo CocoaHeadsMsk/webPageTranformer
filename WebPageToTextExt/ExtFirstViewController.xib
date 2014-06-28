@@ -21,10 +21,26 @@
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2j-0n-awL">
+                    <rect key="frame" x="375" y="27" width="100" height="36"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="914-Id-zot"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="EXIT">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="exit" destination="-1" eventType="touchUpInside" id="4dO-EZ-uDn"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="q2n-uR-rV9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="49W-8v-d9D"/>
+                <constraint firstAttribute="trailing" secondItem="Q2j-0n-awL" secondAttribute="trailing" constant="5" id="9Eh-I7-h5J"/>
+                <constraint firstItem="Q2j-0n-awL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="JOT-Xy-bjf"/>
                 <constraint firstAttribute="bottom" secondItem="q2n-uR-rV9" secondAttribute="bottom" id="W7t-wG-JNo"/>
                 <constraint firstItem="q2n-uR-rV9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZBX-Hh-133"/>
                 <constraint firstAttribute="trailing" secondItem="q2n-uR-rV9" secondAttribute="trailing" id="sFg-IV-gbc"/>
@@ -32,7 +48,7 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="AbstractSizeClassScreen[default]"/>
-            <point key="canvasLocation" x="280" y="237"/>
+            <point key="canvasLocation" x="158" y="222"/>
         </view>
     </objects>
 </document>

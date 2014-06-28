@@ -12,6 +12,7 @@ import MobileCoreServices
 class ExtFirstViewController: UIViewController {
 
     @IBOutlet var mainTextView: UITextView
+    
     let baseURL = "http://boilerpipe-web.appspot.com/extract"
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -57,5 +58,9 @@ class ExtFirstViewController: UIViewController {
             },failure: {(error: NSError) -> Void in
                 println("error: \(error)")
             })
+    }
+    
+    @IBAction func exit() {
+        self.extensionContext.completeRequestReturningItems(nil, completionHandler: nil)
     }
 }
