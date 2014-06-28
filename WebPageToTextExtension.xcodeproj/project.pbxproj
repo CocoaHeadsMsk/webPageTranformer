@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		901E92CD195F22B4003651A4 /* ExtFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E92CB195F22B4003651A4 /* ExtFirstViewController.swift */; };
 		901E92CE195F22B4003651A4 /* ExtFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 901E92CC195F22B4003651A4 /* ExtFirstViewController.xib */; };
+		90555C5D195F3E2D00A00AC6 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90555C5C195F3E2D00A00AC6 /* HTTPRequestSerializer.swift */; };
+		90555C5E195F3E3200A00AC6 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90555C5C195F3E2D00A00AC6 /* HTTPRequestSerializer.swift */; };
+		90555C60195F3E6700A00AC6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90555C5F195F3E6700A00AC6 /* CFNetwork.framework */; };
+		90555C62195F3E7400A00AC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90555C61195F3E7400A00AC6 /* Foundation.framework */; };
+		90555C66195F3E9400A00AC6 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90555C63195F3E9400A00AC6 /* HTTPResponseSerializer.swift */; };
+		90555C67195F3E9400A00AC6 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90555C64195F3E9400A00AC6 /* HTTPTask.swift */; };
+		90555C68195F3E9400A00AC6 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90555C65195F3E9400A00AC6 /* HTTPUpload.swift */; };
+		90555C69195F3E9C00A00AC6 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90555C65195F3E9400A00AC6 /* HTTPUpload.swift */; };
+		90555C6A195F3EA000A00AC6 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90555C64195F3E9400A00AC6 /* HTTPTask.swift */; };
+		90555C6B195F3EA200A00AC6 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90555C63195F3E9400A00AC6 /* HTTPResponseSerializer.swift */; };
 		90DDF436195EDBEA009FBDA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DDF435195EDBEA009FBDA4 /* AppDelegate.swift */; };
 		90DDF438195EDBEA009FBDA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DDF437195EDBEA009FBDA4 /* ViewController.swift */; };
 		90DDF43B195EDBEA009FBDA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DDF439195EDBEA009FBDA4 /* Main.storyboard */; };
@@ -52,6 +62,12 @@
 /* Begin PBXFileReference section */
 		901E92CB195F22B4003651A4 /* ExtFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtFirstViewController.swift; sourceTree = "<group>"; };
 		901E92CC195F22B4003651A4 /* ExtFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtFirstViewController.xib; sourceTree = "<group>"; };
+		90555C5C195F3E2D00A00AC6 /* HTTPRequestSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestSerializer.swift; sourceTree = "<group>"; };
+		90555C5F195F3E6700A00AC6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		90555C61195F3E7400A00AC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90555C63195F3E9400A00AC6 /* HTTPResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseSerializer.swift; sourceTree = "<group>"; };
+		90555C64195F3E9400A00AC6 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		90555C65195F3E9400A00AC6 /* HTTPUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPUpload.swift; sourceTree = "<group>"; };
 		90DDF430195EDBEA009FBDA4 /* WebPageToTextExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebPageToTextExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DDF434195EDBEA009FBDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90DDF435195EDBEA009FBDA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90555C62195F3E7400A00AC6 /* Foundation.framework in Frameworks */,
+				90555C60195F3E6700A00AC6 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +102,8 @@
 		90DDF427195EDBEA009FBDA4 = {
 			isa = PBXGroup;
 			children = (
+				90555C61195F3E7400A00AC6 /* Foundation.framework */,
+				90555C5F195F3E6700A00AC6 /* CFNetwork.framework */,
 				90DDF432195EDBEA009FBDA4 /* WebPageToTextExtension */,
 				90DDF457195EDDDB009FBDA4 /* Extension */,
 				90DDF431195EDBEA009FBDA4 /* Products */,
@@ -134,6 +154,10 @@
 		90DDF458195EDDDB009FBDA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				90555C63195F3E9400A00AC6 /* HTTPResponseSerializer.swift */,
+				90555C64195F3E9400A00AC6 /* HTTPTask.swift */,
+				90555C65195F3E9400A00AC6 /* HTTPUpload.swift */,
+				90555C5C195F3E2D00A00AC6 /* HTTPRequestSerializer.swift */,
 				90DDF459195EDDDB009FBDA4 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -242,7 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90555C66195F3E9400A00AC6 /* HTTPResponseSerializer.swift in Sources */,
+				90555C67195F3E9400A00AC6 /* HTTPTask.swift in Sources */,
+				90555C5D195F3E2D00A00AC6 /* HTTPRequestSerializer.swift in Sources */,
 				90DDF438195EDBEA009FBDA4 /* ViewController.swift in Sources */,
+				90555C68195F3E9400A00AC6 /* HTTPUpload.swift in Sources */,
 				90DDF436195EDBEA009FBDA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,7 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90555C6A195F3EA000A00AC6 /* HTTPTask.swift in Sources */,
 				901E92CD195F22B4003651A4 /* ExtFirstViewController.swift in Sources */,
+				90555C69195F3E9C00A00AC6 /* HTTPUpload.swift in Sources */,
+				90555C5E195F3E3200A00AC6 /* HTTPRequestSerializer.swift in Sources */,
+				90555C6B195F3EA200A00AC6 /* HTTPResponseSerializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
